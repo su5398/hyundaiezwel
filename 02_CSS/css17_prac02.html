@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #bg{
+            width: 500px;
+            height: 620px;
+            background-color: rgb(36, 146, 36);
+            border-radius: 20px;
+            padding: 20px;
+        }
+        .box{
+            height: 30px;
+            margin: 5px;
+            background-color: rgb(174, 212, 116);
+            border-radius: 10px;
+            border: 1px solid white;
+            padding: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS3</h1>
+    <div id="bg">
+        <p>Step 1: 로그인 정보</p>
+        <p class="box">&nbsp아이디&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="userid" size="20" maxlength="10"></p>
+        <p class="box">&nbsp비밀번호&nbsp;<input type="password" name="userpw" size="20"></P>
+        <p class="box">&nbsp비밀번호 확인&nbsp;<input type="password" name="userpw" size="20"></P>
+        <p class="box">&nbsp회원 등급&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="userid" size="20" maxlength="10"></p>
+        <p>Step 2: 개인 정보</p>
+        <p class="box">&nbsp이름&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="userid" size="20" maxlength="10" placeholder="5자 미만 공백없이"></p>
+        <p class="box">&nbsp이메일 <input type="email" name="'email" placeholder="이메일을 입력하세요"></P>
+        <p class="box">&nbsp연락처&nbsp;<input type="tel" name="phone" size="20"></P>
+        <p>Step 3: 코딩 숙련도(상, 중, 하)</p>
+        <p class="box"><input type="range" min="0" max="100" value="50" step="50" name="point"></p>
+        <p class="submit"><input type="submit" value="제출"></p>
+    </div>
+</body>
+</html>

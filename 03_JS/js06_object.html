@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+
+    function myClass(){
+        this.name = "멀티캠퍼스";
+        let name02 = "2회차"
+        this.getName02=function(){return name02;}
+    }
+
+    const myClass2 = {
+        name : "multi",
+        print : function(){
+            alert(myClass2.name + " : print");
+            return myClass2.name;
+        }
+    }
+
+    function objTest(){
+        let cls = new myClass();
+        alert(cls.name); //외부에서 접근이 가능
+        alert(cls.name02); //외부에서 접근이 불가
+        alert(cls.getName02())
+
+        alert(myClass2.name);
+        myClass2.print();
+    }
+</script>
+<body>
+    <pre>
+        객체: 관련된 데이터(값, 정보)와 함수(기능)의 집합
+        객체의 구성
+        - 메소드 : 기능 정의
+        - 속성 : 객체 내부 데이터
+        - this : 객체 내부의 메소드나 속성은 정의할 때 사용
+        - 프로토 타입
+    </pre>
+    <button onclick="objTest();">객체</button>
+</body>
+</html>
